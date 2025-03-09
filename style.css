@@ -1,0 +1,76 @@
+:root {
+  --background : hsl(212, 45%, 89%);
+  --basic : hsl(216, 15%, 48%);
+  --important : hsl(218, 44%, 22%);
+  --card : hsl(0, 0%, 100%);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background);
+  margin : 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+.card {
+  background-color: var(--card);
+  width: 270px;
+  height: 450px;
+  border-radius: 10px;
+  text-align: center;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+
+}
+
+.qr-box {
+  padding-top : 13.5px;
+  width: 90%;
+  height: auto;
+}
+.qr-code{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+
+}
+
+.text-box{
+  margin-top: 0px;/* 고민해보기*/
+  width: 90%;
+  height: auto;
+  padding: 0px 11px
+}
+
+.important-text {
+  color: var(--important);
+  font-family: "Outfit";
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* letter-spacing: -0.1rem; */
+
+}
+
+.basic-text {
+  color : var(--basic);
+  font-family : "Outfit";
+  font-size: 0.85rem ;
+  font-weight: 400;
+
+}
+
+
